@@ -27,7 +27,10 @@ const MovieDetails = (props) => {
 
         <ul>
 
-            {props.movieDetailsState.movieDetails.overview}
+            <li>{props.movieDetailsState.movieDetails.overview}</li>
+            <li>Release Date: {props.movieDetailsState.movieDetails.release_date}</li>
+            <li>Rating: {props.movieDetailsState.movieDetails.vote_average}</li>
+            <li>Runtime: {props.movieDetailsState.movieDetails.runtime} minutes</li>
             {/* {props.movieDetailsState.movies.length ? (
                 props.movieDetailsState.movies.map((movie) => (
                     <li key={movie.id}>{movie.name}</li>
